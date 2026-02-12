@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from 'next/image'
-import BgVideo from "@/app/timer/BgVideo";
+import BgVideo from "@/app/kadikaaram/BgVideo";
 export default function Home() {
   const [timeRemaining, setTimeRemaining] = useState({
     hours: 0,

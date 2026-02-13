@@ -18,7 +18,7 @@ export default function Home() {
       
       // Create start and end times for TODAY
       const startTime = new Date(now); 
-      startTime.setHours(9,30, 0, 0); // 9:00 AM today
+      startTime.setHours(9,40, 0, 0); // 9:00 AM today
       
       const endTime = new Date(now);
       endTime.setHours(15, 0, 0, 0); // 3:00 PM today (15:00)

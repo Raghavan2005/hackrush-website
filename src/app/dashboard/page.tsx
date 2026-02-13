@@ -24,7 +24,7 @@ useEffect(() => {
 
   const loadDashboard = async () => {
     try {
-      const res = await fetch("http://hackadmin.bicrec.in:5000/api/team/me", {
+      const res = await fetch("https://hackadmin.bicrec.in/api/team/me", {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -66,7 +66,7 @@ useEffect(() => {
     const token = localStorage.getItem("token");
 
     try {
-      const res = await fetch("http://hackadmin.bicrec.in:5000/api/spin", {
+      const res = await fetch("https://hackadmin.bicrec.in/api/spin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -149,7 +149,7 @@ useEffect(() => {
 
           try {
             const res = await fetch(
-              "http://hackadmin.bicrec.in:5000/api/problems/select",
+              "https://hackadmin.bicrec.in/api/problems/select",
               {
                 method: "POST",
                 headers: {

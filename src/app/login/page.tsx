@@ -41,7 +41,7 @@ const router = useRouter();
   setError("");
 
   try {
-    const response = await fetch("http://hackadmin.bicrec.in:5000/api/auth/login", {
+    const response = await fetch("https://hackadmin.bicrec.in/api/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -65,7 +65,7 @@ const router = useRouter();
     console.log("Login successful");
 
     // fetch problem statements
-const probRes = await fetch("http://hackadmin.bicrec.in:5000/api/problems", {
+const probRes = await fetch("https://hackadmin.bicrec.in/api/problems", {
   headers: {
     Authorization: `Bearer ${data.token}`,
   },
@@ -130,7 +130,7 @@ setShowProblemModal(true);
 
           try {
             const res = await fetch(
-              "http://hackadmin.bicrec.in:5000/api/problems/select",
+              "https://hackadmin.bicrec.in/api/problems/select",
               {
                 method: "POST",
                 headers: {
